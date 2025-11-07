@@ -41,17 +41,22 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: hsl(0, 0%, 12%);
+    background-color: hsl(0, 0%, 10%);
+    height: 600px;
+    width: 374px;
+    padding: 25px;
+    border-radius: 10px;
 }
 
 .profile-pic {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
+    /* margin-top: 15px; */
 }
 
 .profile-pic img {
@@ -70,26 +75,50 @@ body {
 
 .profile .name {
     color: white;
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 25px;
 }
 
 .profile .location {
     color: hsl(75, 94%, 57%);
+    font-size: 15px;
+    margin-top: 4px;
 }
 
 .about {
     color: white;
-    font-size: 14px;
+    font-size: 12px;
+    margin-top: 15px;
 }
 
 .links {
     display: flex;
     flex-direction: column;
+    height: 55%;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 15px 0;
+    
 }
 
 .links a {
     color: white;  
     text-decoration: none;
     font-weight: 700;
+    background-color: hsl(0, 0%, 16%);
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55px;
+    border-radius: 8px;
+}
+
+.links a:hover {
+    background-color: hsl(75, 94%, 57%); /* Green hover color */
+    color: hsl(0, 0%, 10%); /* Dark text on hover */
 }
 
 .attribution {
@@ -98,9 +127,24 @@ body {
     font-weight: 400;
     font-size: 11px;
     margin-top: auto;
+    text-align: center;
 
 }
 
 .attribution a {
     color: white;
 }
+
+@media only screen and (max-width: 375px) {
+    .card {
+        width: 327px;
+        max-width: calc(100vw - 48px);
+        min-width: 327px;
+        padding: 24px;
+        box-sizing: border-box;
+    }
+
+    .main-content {
+        padding: 0 24px;
+    }
+} 
