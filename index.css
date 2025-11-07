@@ -106,7 +106,7 @@ body {
 .links a {
     color: white;  
     text-decoration: none;
-    font-weight: 700;
+    font-weight: 600;
     background-color: hsl(0, 0%, 16%);
     width: 80%;
     display: flex;
